@@ -1,4 +1,3 @@
-#-------- app phyton
 # Importa la clase Flask y la función render_template desde el módulo flask.
 from flask import Flask, render_template
 
