@@ -7,7 +7,7 @@ WORKDIR /app
 # Copiamos los archivos a nuestro directorio principal de trabajo
 ADD . /app/
 
-RUN pip install -r requirements.txt
+RUN pip install -r requeriments.txt
 
 # Creamos una variable para no tener que especificar el nombre del archivo .py en el cmd
 RUN export FLASK_APP=app.py
