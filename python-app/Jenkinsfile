@@ -3,7 +3,7 @@ pipeline{
 
     environment {
         IMAGE_NAME = "alberto425/ahp"
-        DOCKERHUB_CREDS = credentials("dockerhub")
+        DOCKERHUB_CREDS = credentials("udi")
         NameContainer = "python-app"
     }
 
