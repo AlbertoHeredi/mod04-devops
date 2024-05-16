@@ -2,8 +2,8 @@ pipeline{
     agent any
 
     environment {
-        IMAGE_NAME = "renatoapaza/python-app"
-        DOCKERHUB_CREDS = credentials("dockerhub")
+        IMAGE_NAME = "alberto425/ahp"
+        DOCKERHUB_CREDS = credentials("alberto")
         NameContainer = "python-app"
     }
 
@@ -11,7 +11,7 @@ pipeline{
 
         stage('Copy git repo') {
             steps {
-                git branch: 'master', credentialsId: 'github', url: 'https://github.com/renatoapaza/mod04-devops.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/AlbertoHeredi/mod04-devops.git'
             }
         }
 
