@@ -9,7 +9,7 @@
     stages {
        stage('Copy git repo') {
             steps {
-                git branch: 'master', credentialsId: 'github', url: 'https://github.com/AlbertoHeredi/mod04-devops.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/AlbertoHeredi/mod04-devops.git'
             }
         }
 
